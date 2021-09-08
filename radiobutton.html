@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>dom</title>
+	<script type="text/javascript">
+		function callthis(){
+			var val=document.getElementById("dil");
+			var val1=document.getElementById("kha");
+			if(val.checked==true){
+				alert("first is true");
+			}
+			else{
+				alert("second is true");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input id="dil" type="radio" name="thismustbesameforradiobuttons" value="first">first</input>
+		<input id="kha" type="radio" name="thismustbesameforradiobuttons" value="second">Second</input>
+	</form>
+	<button onclick="callthis()">click me</button>
+</body>

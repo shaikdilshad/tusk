@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Arrays</title>
+	<script >
+		var ele1="dil";
+		var ele2=1;
+		/*var ele=[ele1,ele2,"some",89.90];
+		document.write(ele[0]);
+		document.write(ele[1]);*/
+		var ele=new Array(ele1,ele2,"some",89.90);
+
+		ele.push(true);
+		ele.pop();
+		ele.shift();
+		ele.unshift("dil");
+		/*delete ele[0];
+		document.write(ele.length+"<br />");
+		ele[2]="more";*/
+		for(let i=0;i<ele.length;i++){
+			document.write(ele[i]+" ");
+		}
+		ele.splice(2,2,"man");
+		document.write("<br />");
+		for(let i=0;i<ele.length;i++){
+			document.write(ele[i]+" ");
+		}
+		//var ele=new Array(ele1,ele2,"some",89.90);
+	</script>
+</head>
+</html>

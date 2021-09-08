@@ -1,0 +1,32 @@
+
+<html>
+<head>
+	<title>objects</title>
+	<script>
+		var car={car_model:"tesla",car_brand:"model2",car_price:45000,
+	teslaloco:function(){
+		document.write("dil");
+	}
+	};
+	document.write(car.car_model+"  ");
+	document.write(car.car_brand+"  ");
+	car.teslaloco();
+	delete car.car_price;
+	document.write(car.car_price);
+	car.car_price="15000";
+	document.write(car.car_price);
+	document.write(typeof(car.car_price));
+	/*function car(car_brand,car_price,car_model){
+		this.car_brand=car_brand;
+		this.car_price=car_price;
+		this.car_model=car_model;
+		this.teslaloco=function(){
+			document.write("inside method");
+		}
+	}
+	var c1=new car("tesla",3355453,"model2");
+	document.write(c1.car_brand);
+	c1.teslaloco();*/
+</script>
+</head>
+</html>
